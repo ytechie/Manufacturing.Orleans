@@ -1,6 +1,8 @@
 Manufacturing.Orleans
 =======================
 
+This is a playground for writing Orleans grains to represent manufacturing sensors and other metadata.
+
 # License
 
 Microsoft Developer Experience & Evangelism

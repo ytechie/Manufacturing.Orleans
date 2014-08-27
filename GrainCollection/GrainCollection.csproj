@@ -53,7 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GrainInterfaces\GrainInterfaces\GrainInterfaces.csproj">
+    <ProjectReference Include="..\GrainInterfaces\GrainInterfaces.csproj">
       <Project>{f4de5dcd-46b4-4828-a9f5-3dc8a4707f5c}</Project>
       <Name>GrainInterfaces</Name>
     </ProjectReference>

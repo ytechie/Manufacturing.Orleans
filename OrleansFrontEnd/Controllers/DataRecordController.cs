@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using GrainInterfaces;
@@ -9,10 +10,13 @@ namespace OrleansFrontEnd.Controllers
 {
     public class DataRecordController : ApiController
     {
-        public void Post(DatasourceRecord record)
+        public void Post([FromBody] IEnumerable<DatasourceRecord> records)
         {
-            var datasource = DatasourceGrainFactory.GetGrain(record.DatasourceId);
-            datasource.NewRecord(record);
+            foreach (var record in records)
+            {
+                var datasource = DatasourceGrainFactory.GetGrain(record.DatasourceId);
+                datasource.NewRecord(record);
+            }
         }
 
         public DatasourceRecord Get()

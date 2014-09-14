@@ -44,9 +44,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IGrain1.cs" />
+    <Compile Include="IDatasourceGrain.cs" />
     <Compile Include="Properties\orleans.codegen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Manufacturing.Framework\Dto\Manufacturing.Framework.Dto.csproj">
+      <Project>{32aefb8c-211a-406c-b0ee-35a9219b1147}</Project>
+      <Name>Manufacturing.Framework.Dto</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

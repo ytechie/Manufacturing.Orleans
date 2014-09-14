@@ -49,10 +49,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Grain1.cs" />
+    <Compile Include="DatasourceGrain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Manufacturing.Framework\Dto\Manufacturing.Framework.Dto.csproj">
+      <Project>{32aefb8c-211a-406c-b0ee-35a9219b1147}</Project>
+      <Name>Manufacturing.Framework.Dto</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GrainInterfaces\GrainInterfaces.csproj">
       <Project>{f4de5dcd-46b4-4828-a9f5-3dc8a4707f5c}</Project>
       <Name>GrainInterfaces</Name>
